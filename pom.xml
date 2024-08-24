@@ -6,15 +6,15 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>gameoflife</name>
-    <url>https://github.com/wakaleo/game-of-life</url>
+    <!-- <url>https://github.com/wakaleo/game-of-life</url> -->
     <properties>
         <build.number>SNAPSHOT</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <easyb.version>1.4</easyb.version>
         <cobertura.version>2.6</cobertura.version>
         <!-- A workaround for a bug in PMD -->
-        <sourceJdk>1.8</sourceJdk>
-        <targetJdk>1.8</targetJdk>
+        <sourceJdk>17</sourceJdk>
+        <targetJdk>17</targetJdk>
         <github.account>wakaleo</github.account>
         <thucydides.version>1.8.4</thucydides.version>
         <jelastic.context>gameoflife</jelastic.context>
@@ -22,9 +22,9 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
-        <developerConnection>scm:git:git@github.com:${github.account}/game-of-life.git</developerConnection>
-        <url>scm:git:git@github.com:${github.account}/game-of-life.git</url>
+        <connection>scm:git:git@github.com:${github.account}/jenkins-game-of-life.git</connection>
+        <developerConnection>scm:git:git@github.com:${github.account}/jenkins-game-of-life.git</developerConnection>
+        <url>scm:git:git@github.com:${github.account}/jenkins-game-of-life.git</url>
     </scm>
     <build>
         <plugins>
@@ -32,8 +32,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -159,7 +159,7 @@
                         </execution>
                     </executions>
                     <configuration>
-                        <storyType>html</storyType>                         l
+                        <storyType>html</storyType>                         
                         <storyReport>${basedir}/target/easyb/easyb-report.html
                         </storyReport>
                     </configuration>
@@ -207,9 +207,9 @@
     </dependencies>
 
     <modules>
-        <module>gameoflife-build</module>
+        <!-- <module>gameoflife-build</module> -->
         <module>gameoflife-core</module>
-        <module>gameoflife-web</module>
+        <!-- <module>gameoflife-web</module> -->
     </modules>
     <profiles>
         <profile>
