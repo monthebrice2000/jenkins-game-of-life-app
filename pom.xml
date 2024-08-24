@@ -11,7 +11,7 @@
         <build.number>SNAPSHOT</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <easyb.version>1.4</easyb.version>
-        <cobertura.version>2.6</cobertura.version>
+        <cobertura.version>2.7</cobertura.version>
         <!-- A workaround for a bug in PMD -->
         <sourceJdk>17</sourceJdk>
         <targetJdk>17</targetJdk>
@@ -21,11 +21,11 @@
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
 
-    <scm>
+    <!-- <scm>
         <connection>scm:git:git@github.com:${github.account}/jenkins-game-of-life.git</connection>
         <developerConnection>scm:git:git@github.com:${github.account}/jenkins-game-of-life.git</developerConnection>
         <url>scm:git:git@github.com:${github.account}/jenkins-game-of-life.git</url>
-    </scm>
+    </scm> -->
     <build>
         <plugins>
             <plugin>
